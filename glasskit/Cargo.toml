@@ -1,0 +1,10 @@
+[package]
+name = "glasskit"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Themable Rune components for business apps: liquid glass, frosted glass, Material and bold skins."
+repository = "https://github.com/FrancescoDiBella/rune-glasskit"
+
+[dependencies]
+rune = { workspace = true }

@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["glasskit", "demo"]
+
+[workspace.dependencies]
+rune = { git = "https://github.com/anomalyco/rune", rev = "39301f6793266450a057f270da06b048a689be96" }

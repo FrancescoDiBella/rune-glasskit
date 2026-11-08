@@ -1,0 +1,21 @@
+[package]
+name = "glasskit-demo"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+[lib]
+name = "glasskit_demo"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "glasskit-demo"
+path = "src/main.rs"
+
+[dependencies]
+rune = { workspace = true }
+glasskit = { path = "../glasskit" }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "=0.2.129"
